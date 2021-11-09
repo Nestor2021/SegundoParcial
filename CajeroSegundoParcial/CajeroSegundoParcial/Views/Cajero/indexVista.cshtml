@@ -1,0 +1,16 @@
+﻿@model CajeroSegundoParcial.Models.Cajero
+@{
+    ViewBag.Title = "indexVista";
+}
+
+<h2>Cajero Automatico</h2>
+@using (Html.BeginForm("indexVista", "Cajero", FormMethod.Post))
+{
+    <label>Escriba el Monto</label>
+    @Html.TextBoxFor(a => a.Retiro)
+    <input type="submit" class="btn btn-primary" />
+
+
+}
+
+
